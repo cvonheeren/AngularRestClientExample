@@ -1,0 +1,28 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "ha sucedido",
+      "fecha": "2021-02-02",
+      "imagen": "img2",
+      "textocorto": "el suceso",
+      "texto": "lorem lorem loremloremloremloremloremlorem"
+    },
+    {
+      "id": 2,
+      "titulo": "otra cosa",
+      "fecha": "2021-01-01",
+      "imagen": "img",
+      "textocorto": "el suceso",
+      "texto": "lorem lorem loremloremloremloremloremlorem"
+    },
+    {
+      "id": 3,
+      "titulo": "afdasf",
+      "fecha": "2021-03-03",
+      "imagen": "asdfasdf",
+      "textocorto": "sdfasdfasdf",
+      "texto": "asdfasdf"
+    }
+  ]
+}

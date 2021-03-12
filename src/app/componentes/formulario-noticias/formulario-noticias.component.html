@@ -1,0 +1,35 @@
+<form #formulario class="container needs-validation" [class.was-validated]="validado" novalidate>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Titulo</label>
+        <input required [(ngModel)]="noticia.titulo" name="titulo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="invalid-feedback">
+            No puede estar vacío
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Imagen</label>
+        <input required [(ngModel)]="noticia.imagen" name="imagen" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="invalid-feedback">
+            No puede estar vacío
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Fecha (hoy)</label>
+        <input required [(ngModel)]="noticia.fecha" name="imagen" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Texto corto</label>
+        <textarea required [(ngModel)]="noticia.textocorto" name="textocorto" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="invalid-feedback">
+            No puede estar vacío
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Texto largo</label>
+        <textarea required [(ngModel)]="noticia.texto" name="texto" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="invalid-feedback">
+            No puede estar vacío
+        </div>
+    </div>
+    <button (click)="btnAceptar(formulario.checkValidity())" class="btn btn-primary">Añadir</button>
+</form>
